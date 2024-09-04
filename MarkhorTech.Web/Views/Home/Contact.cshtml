@@ -1,0 +1,178 @@
+﻿@model MarkhorTech.Web.Models.ContactViewModel
+
+@{
+    ViewBag.Title = "Contact";
+}
+
+<!--Page Title-->
+<section class="page-title" style="background-image: url(/images/background/4.jpg);">
+    <div class="auto-container">
+        <h1>Contact</h1>
+        <ul class="bread-crumb">
+
+            <li>@Html.ActionLink("Home", "Index", "Home")
+            <li class="active">Contact</li>
+        </ul>
+    </div>
+</section>
+<!--End Page Title-->
+<!--Contact Section-->
+<section class="contact-section">
+    <div class="auto-container">
+        <div class="row clearfix">
+
+            <!--Form Column-->
+            <div class="column form-column col-md-7 col-sm-12 col-xs-12">
+                <div id="Form1">
+                    <div class="default-title"><h3>Send Us Message</h3><div class="separator"></div></div>
+                    <div class="contact-form default-form">
+                        <form id="ContactFormData">
+                            <div class="row clearfix">
+                                <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                    <div class="group-inner">
+                                        @Html.TextBoxFor(m => m.Name, new { @class = "form-control", @placeholder = "Name *" })
+                                        @Html.ValidationMessageFor(m => m.Name, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                    <div class="group-inner">
+                                        @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @placeholder = "Email *" })
+                                        @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                    <div class="group-inner">
+                                        @Html.TextBoxFor(m => m.Phone, new { @class = "form-control", @placeholder = "Phone" })
+                                        @Html.ValidationMessageFor(m => m.Phone, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                    <div class="group-inner">
+                                        @Html.TextBoxFor(m => m.Subject, new { @class = "form-control", @placeholder = "Subject *" })
+                                        @Html.ValidationMessageFor(m => m.Subject, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                    <div class="group-inner">
+                                        @Html.TextAreaFor(m => m.Message, new { @class = "form-control", @placeholder = "Message *" })
+                                        @Html.ValidationMessageFor(m => m.Message, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                    <span id="serverErrorContact" class="text-danger"></span>
+                                    <div id="messageLoadar" style="display:none;">
+                                        <h3><img src="~/images/icons/PreLoader10.gif" height="45" width="45" /> Sending your message...</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                            <button id="btnContactSubmit" type="submit" class="theme-btn btn-style-one">SUBMIT </button>
+                        </div>
+                    </div>
+                </div>
+                <div id="Form2" style="display:none;">
+                    <div class="default-title"><h3>You Message has been sent Successfully.</h3><div class="separator"></div></div>
+                </div>
+            </div>
+
+            <!--Info Column-->
+            <div class="column info-column col-md-5 col-sm-12 col-xs-12">
+
+                <div class="inner-box">
+                    <!--Default Title-->
+                    <div class="default-title"><h3>Contact Us</h3><div class="separator"></div></div>
+                    <!--Contact Info-->
+                    <div class="contact-info">
+                        <ul>
+                            <li>
+                                <span class="icon flaticon-placeholder"></span>43-L Abdul Haque Rd, Phase 2, Khokhar Chowk,<br> Johar Town, Lahore, Pakistan
+                            </li>
+                            <li><span class="icon flaticon-envelope"></span>info@markhortechologies.com</li>
+                            @*<li><span class="icon flaticon-phone-call"></span>+92 42 35235850</li>*@
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Map Section-->
+<section class="map-section">
+
+    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDL67Jv2APEERp7vhAwc9nO1zH-U1XaJwo'></script>
+
+    <div style='overflow:hidden;height:421px;width:1350px;'>
+        <div id='gmap_canvas' style='height:421px;width:1350px;'></div>
+
+        @*<style>
+                #gmap_canvas img {
+                    max-width: none !important;
+                    background: none !important
+                }
+            </style>*@
+
+
+    </div> <a href='https://www.embedmap.net/'>google map html embed</a>
+    <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=7965d19ca2100b11e9b597f7a4f73164ab3aa9ed'></script>
+    <script type='text/javascript'>
+function init_map() {
+            var myOptions = { zoom: 12, center: new google.maps.LatLng(31.469281, 74.271652), mapTypeId: google.maps.MapTypeId.TERRAIN };
+            map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+            marker = new google.maps.Marker({ map: map, position: new google.maps.LatLng(31.469281, 74.271652) });
+            infowindow = new google.maps.InfoWindow({ content: '<strong>Markhor Techologies</strong><br>43-L Abdul Haque Rd Phase 2,<br>Johar Town Lahore<br>' });
+            google.maps.event.addListener(marker, 'click', function () { infowindow.open(map, marker); }); infowindow.open(map, marker);
+        }
+
+        google.maps.event.addDomListener(window, 'load', init_map);</script>
+
+
+
+</section>
+<!--End Map Section-->
+
+
+<script src="~/Scripts/jquery.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $("#btnContactSubmit").click(function () {
+            $('#messageLoadar').css("display", "block");
+            var myFormData = $("#ContactFormData").serialize();
+           
+            if (!$("#ContactFormData").valid())
+            {
+                $('#messageLoadar').css("display", "none");
+                return false;
+            }
+             $.ajax(
+                {
+                    url: '@Url.Action("Contact", "Home")',
+                    type: 'POST',
+                    data: myFormData,
+                    success: function (data) {
+                        var isSuccessful = (data['success']);
+                        if (!isSuccessful) {
+                            $("#serverErrorContact").text(data['errors']);
+                            $('#messageLoadar').css("display", "none");
+                        }
+                        else
+                        {
+                            $('#messageLoadar').css("display", "none");
+                            $('#Form1').css("display", "none");
+                            $('#Form2').css("display", "block");
+                        }
+                    },
+                    error: function (data) {
+
+                    }
+                });
+        });
+    });
+</script>

@@ -1,0 +1,21 @@
+﻿@model IEnumerable<MarkhorTech.Web.Models.MarkhorPostViewModel>
+
+<div class="sidebar-widget sidebar-broucher">
+    <div class="sidebar-title">
+        <h2>Download Brochures</h2>
+    </div>
+    <ul class="brouchers">
+        <li><a href="~/Brouchers/MarkhorTechBroucher.pdf"><span class="icon flaticon-pdf"></span> Click here to Download<span class="download-icon fa fa-download"></span></a></li>
+        @*<li><a><span class="icon flaticon-file"></span> Download file . doc <span class="download-icon fa fa-download"></span></a></li>
+        <li><a><span class="icon flaticon-file-1"></span> Download file . ppt <span class="download-icon fa fa-download"></span></a></li>*@
+    </ul>
+</div>
+
+<!-- Quote Widget-->
+<div class="sidebar-widget quote-widget">
+    <div class="inner-box">
+        <h2>Free Consultation</h2>
+        <div class="text">These days are all share them with  much more than a hunch.</div>
+        <a href="@Url.Action("Contact","Home")" class="theme-btn btn-style-one">Contact Us</a>
+    </div>
+</div>

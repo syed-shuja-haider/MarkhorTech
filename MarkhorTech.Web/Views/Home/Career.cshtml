@@ -1,0 +1,194 @@
+﻿@{
+    ViewBag.Title = "Career";
+}
+
+@{
+    IEnumerable<MarkhorTech.Web.Models.MarkhorPostViewModel> postList = ViewData["TopPosts"] as IEnumerable<MarkhorTech.Web.Models.MarkhorPostViewModel>;
+}
+
+<!--Page Title-->
+<section class="page-title" style="background-image: url(/images/background/4.jpg);">
+    <div class="auto-container">
+        <h1>Career</h1>
+        <ul class="bread-crumb">
+            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+            <li class="active">Career</li>
+        </ul>
+    </div>
+</section>
+<!--End Page Title-->
+<!--Sidebar Page-->
+<div class="sidebar-page-container right-side-bar">
+    <div class="auto-container">
+        <div class="row clearfix">
+
+            <!--Content Side-->
+            <div class="content-side col-lg-8 col-md-12 col-sm-12 col-xs-12">
+
+                <!--News details-->
+                <div class="blog-detail">
+
+
+                    <!--News Block-->
+                    <div class="news-block">
+                        <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                            <figure class="image-box">
+                                <img src="~/images/resource/career.jpg" alt="" />
+                            </figure>
+                            <div class="lower-content">
+                                <div class="upper-box">
+                                    <h3>Career in Markhor Technologies</h3>
+                                    <div class="lower-box">
+                                        <div class="date"></div>
+                                    </div>
+                                    <div class="text">  At Markhor Technologies, we are always on the lookout for outstanding talent that welcomes challenging environment and has the imagination, creativity, initiatives and desires to make a difference. Markhor Technologies offers career opportunities with high growth potential that are both rewarding and challenging. If you want to become a part of innovative technology and solutions in our dynamic company, apply now for a career with <b>Markhor Teschnologies (Pvt.) Ltd.</b> </div>
+                                    @*<div class="text"> Just send us an email to <b>hr@markhortech.com</b>  mentioning your desired field in the subject line. We will contact you as soon as a suitable position becomes available.</div>*@
+                                </div>
+                                <div class="upper-box">
+                                    <iframe src="https://markhortech.webhr.co/hr/careers/" style="margin-top:0px; margin-left:0px; width:800px; height:600px;" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--Post Share Options-->
+                        @*<div class="post-share-options clearfix">
+                                <div class="pull-left tags"><strong>Tags :</strong> <a href="#">Business, </a> <a href="#">Audit, </a> <a href="#">Consulting,</a></div>
+                                <div class="pull-right text-left">
+                                    <div class="share"><a href="#"><span class="flaticon-interface-2"></span> Share</a></div>
+                                </div>
+                            </div>*@
+                    </div>
+
+                    <!--Comments Area-->
+                    @*<div class="comments-area">
+                            <div class="group-title"><h2>Comments (01)</h2></div>
+
+                            <!--Comment Box-->
+                            <div class="comment-box">
+                                <div class="comment">
+                                    <div class="author-thumb"><img src="images/resource/author-2.jpg" alt=""></div>
+                                    <div class="comment-inner">
+                                        <div class="comment-info clearfix"><strong>BRITTANY ROBERTSON</strong><br><div class="comment-time">October 11, 2016</div></div>
+                                        <div class="text">Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. </div>
+                                        <a class="comment-reply" href="#">Reply</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Reply Comment Box-->
+                            <div class="comment-box reply-comment">
+                                <div class="comment">
+                                    <div class="author-thumb"><img src="images/resource/author-5.jpg" alt=""></div>
+                                    <div class="comment-inner">
+                                        <div class="comment-info clearfix"><strong>BRITTANY ROBERTSON</strong><br><div class="comment-time">October 11, 2016</div></div>
+                                        <div class="text">Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. </div>
+                                        <a class="comment-reply" href="#">Reply</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>*@
+
+                    <!-- Comment Form -->
+                    @*<div class="comment-form wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+
+                        <div class="group-title"><h2>LEAVE A REPLY</h2></div>*@
+
+                    <!--Comment Form-->
+                    @*<form method="post" action="http://html.tonatheme.com/2017/Corpro_template/blog.html">
+                                <div class="row clearfix">
+                                    <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                        <input type="text" name="username" placeholder="Name" required>
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                        <input type="email" name="email" placeholder="Email" required>
+                                    </div>
+
+                                    <div class="col-md-12 col-sm-12 col-xs-12 form-group">
+                                        <input type="text" name="website" placeholder="Website (optional)">
+                                    </div>
+
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                        <textarea name="message" placeholder="Message"></textarea>
+                                    </div>
+
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form">POST COMMENT</button>
+                                    </div>
+
+                                </div>
+                            </form>
+
+                        </div>*@
+                    <!--End Comment Form -->
+
+                </div>
+
+            </div>
+            <!--Content Side-->
+            <!--Sidebar-->
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <aside class="sidebar blog-sidebar">
+
+                    <!-- Search Form -->
+                    @*<div class="sidebar-widget search-box">
+                            <div class="sidebar-title"><h2>Search</h2></div>
+                            <form method="post" action="http://html.tonatheme.com/2017/Corpro_template/blog.html">
+                                <div class="form-group">
+                                    <input type="search" name="search-field" value="" placeholder="Search here..">
+                                    <button type="submit"><span class="icon fa fa-search"></span></button>
+                                </div>
+                            </form>
+                        </div>*@
+
+                    <!-- Categories -->
+                    <div class="sidebar-widget recent-articles wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="sidebar-title"><h2>Services</h2></div>
+                        <ul class="list">
+                            <li><a href="@Url.Action("WebDevelopment","Services")" class="clearfix">Web Design & Development</a></li>
+                            <li><a href="@Url.Action("MobileAppDevelopment", "Services")" class="clearfix">Mobile Application Development </a></li>
+                            <li><a href="@Url.Action("DatabaseDevelopment","Services")" class="clearfix">Database Design & Development </a></li>
+                            <li><a href="@Url.Action("POSSolutions","Services")" class="clearfix">Point of Sale Solutions</a></li>
+                            <li><a href="@Url.Action("CRMSolutions","Services")" class="clearfix">CRM Solutions </a></li>
+                            <li><a href="@Url.Action("ERPSolutions","Services")" class="clearfix">ERP Solutions </a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Popular Posts -->
+                    <div class="sidebar-widget popular-posts wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="sidebar-title"><h2>Latest News</h2></div>
+
+                        @foreach (var post in postList)
+                        {
+                            <article class="post">
+                                <figure class="post-thumb"><a href="@post.PostUrl"><img src="@post.ImageUrl" alt=""></a></figure>
+                                <h4><a href="@post.PostUrl">@post.PostTitle</a></h4>
+                                <div class="post-info">@post.DateTime @*<a href="blog-single.html">3 Comments</a>*@</div>
+                            </article>
+                        }
+
+                    </div>
+
+                    <!-- Tags -->
+                    @*<div class="sidebar-widget popular-tags wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                            <div class="sidebar-title"><h2>Tags</h2></div>
+                            <a href="#">Audit</a>
+                            <a href="#">Business</a>
+                            <a href="#">Consuling</a>
+                            <a href="#">Investment</a>
+                            <a href="#">Agent</a>
+                            <a href="#">Employment</a>
+                            <a href="#">Careers</a>
+                            <a href="#">Planning</a>
+                        </div>*@
+
+                </aside>
+
+
+            </div>
+            <!--Sidebar-->
+
+        </div>
+    </div>
+</div>

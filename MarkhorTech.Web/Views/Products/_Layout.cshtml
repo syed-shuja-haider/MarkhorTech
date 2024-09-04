@@ -1,0 +1,43 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="page-title" style="background-image: url(/images/background/4.jpg);">
+    <div class="auto-container">
+        <h1>Products</h1>
+        <ul class="bread-crumb">
+
+            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+            <li class="active">Products</li>
+
+        </ul>
+    </div>
+</section>
+<!--End Page Title-->
+
+<div id="scrollToSideBar" class="sidebar-page-container blog-page">
+    <div class="auto-container">
+        <div class="row clearfix">
+
+            <!--Content Side-->
+            @RenderBody()
+
+            <!--Sidebar-->
+            <div class="sidebar-side pull-left col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                <aside class="sidebar">
+
+                    <!-- Sidebar Category -->
+                    <div class="sidebar-widget sidebar-category">
+                        @Html.Partial("_ManageNav")
+                    </div>
+
+                    <!-- Sidebar Brouchers -->
+@Html.Partial("_PartialSidebar")
+
+                </aside>
+            </div>
+            <!--End Sidebar-->
+
+        </div>
+    </div>
+</div>

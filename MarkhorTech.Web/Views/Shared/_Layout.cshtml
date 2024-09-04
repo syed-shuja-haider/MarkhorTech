@@ -1,0 +1,549 @@
+﻿<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from html.tonatheme.com/2017/Corpro_template/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Nov 2017 09:02:52 GMT -->
+<head>
+    <meta charset="utf-8">
+    <title>@ViewBag.Title - Markhor Technologies</title>
+    <!-- Stylesheets -->
+    <link href="~/Content/bootstrap.css" rel="stylesheet">
+    <link href="~/Content/revolution-slider.css" rel="stylesheet">
+    <link href="~/Content/style.css" rel="stylesheet">
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="~/images/favicon/180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="~/images/favicon/32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="~/images/favicon/16.png">
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link href="~/Content/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+</head>
+
+
+<body>
+
+    <div class="page-wrapper">
+        <!-- Preloader -->
+        <div class="preloader"></div>
+
+        <!-- Main Header / Header Style Two -->
+        <header class="main-header header-style-two">
+
+            <!--Header Top-->
+            <div class="header-top">
+                <div class="auto-container clearfix">
+                    <!--Top Left-->
+                    <div class="top-left pull-left">
+
+                        <p>Welcome to Markhor Technologies (Pvt.) Ltd</p>
+
+                    </div>
+
+                    <!--Top Right-->
+                    <div class="top-right pull-right">
+
+                        <ul class="social-icons clearfix">
+                            <li><a href="https://www.facebook.com/MarkhorTech14"><span class="fa fa-facebook-f"></span></a></li>
+                            <li><a href="https://twitter.com/MarkhorTech786"><span class="fa fa-twitter"></span></a></li>
+                            <li><a href="https://plus.google.com/u/0/110931126306720080549"><span class="fa fa-google-plus"></span></a></li>
+                        
+                       
+                        </ul>
+                    </div>
+                </div>
+            </div><!--End Header Top-->
+
+            <div class="header-upper">
+                <div class="auto-container">
+                    <div class="clearfix border-bottom">
+                        <div class="row">
+                        <div href="@Url.Action("Index","Home")" class="pull-left logo-outer">
+                            <div class="logo"><a><img src="~/images/resource/logo.png" alt="" title="Corpro" height="80" width="200"></a></div>
+                        </div>
+
+                        <div class="pull-right upper-right clearfix">
+
+                            <!--Info Box-->
+                            <div class="upper-column info-box">
+                                <div class="icon-box"><span class="flaticon-headphones"></span></div>
+                                +92 42 35235850
+                                <div class="light-text">Info@markhortechnologies.com</div>
+                            </div>
+
+                            <!--Info Box-->
+                            <div class="upper-column info-box">
+                                <div class="icon-box"><span class="flaticon-placeholder"></span></div>
+                                43-L Abdul Haque Rd, Phase 2,
+                                <div class="light-text">Johar Town, Lahore, Pakistan</div>
+                            </div>
+
+                            <!--Info Box-->
+                            <div class="upper-column info-box">
+                                @*<div class="link"><a href="#" class="theme-btn btn-style-one">Get A Quote</a></div>*@
+                            </div>
+
+                        </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Header-Upper-->
+            <div class="header-bottom">
+                <div class="auto-container">
+                    <div class="clearfix">
+
+
+
+                        <div class="nav-outer clearfix">
+                            <!-- Main Menu -->
+                            <nav class="main-menu">
+                                <div class="navbar-header">
+                                    <!-- Toggle Button -->
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+
+                                <div class="navbar-collapse collapse clearfix">
+                                    <ul class="navigation clearfix">
+                                        <li class="current">
+
+                                            @Html.ActionLink("Home","Index","Home")
+                                            @*<a>Home</a>*@
+                                            <!--<ul>
+                                                <li><a href="index-2.html">Homepage 01</a></li>
+                                                <li><a href="index-3.html">Homepage 02</a></li>
+                                                <li><a href="index-4.html">Homepage 03</a></li>
+                                                <li><a href="index-5.html">Homepage 04</a></li>
+                                                <li><a href="index-6.html">Homepage 05</a></li>
+                                            </ul>-->
+                                        </li>
+                                        <li class="dropdown">
+                                            <a>Company</a>
+                                            <ul>
+                                                <li>@Html.ActionLink("About Us", "About", "Home")</li>
+                                                <li>@Html.ActionLink("Board of Directors","BoardOfDirectors","Home")</li>
+                                                @*<li>@Html.ActionLink("Management Team","ManagementTeam","Home")</li>*@
+                                                @*<li>@Html.ActionLink("Testimonials","Testimonial","Home")</li>*@
+                                                                                                                                              
+                                            </ul>                                        
+                                        </li>
+                                        <li class="dropdown">
+                                            <a >Services</a>
+                                            <ul>
+                                                <li>@Html.ActionLink("Custom Software Development", "CustomSoftwareDevelopment", "Services")</li>
+                                                
+                                                <li><a href="services-single.html"></a>
+                                                    @Html.ActionLink("Web Development", "WebDevelopment", "Services")
+                                                </li>
+                                                <li><a href="services-single.html"></a>
+                                                    @Html.ActionLink("Mobile App Development", "MobileAppDevelopment", "Services")
+                                                </li>
+                                                <li><a href="services-single.html"></a>
+                                                @Html.ActionLink("Database Development", "DatabaseDevelopment", "Services")
+                                                </li>                                        
+                                                <li><a href="services-single.html"></a>
+                                                @Html.ActionLink("ERP Solutions", "ERPSolutions", "Services")
+                                                </li>
+                                                <li><a href="services-single.html"></a>
+                                                @Html.ActionLink("POS Solutions", "POSSolutions", "Services")
+                                                </li>
+                                                <li><a href="services-single.html"></a>
+                                                @Html.ActionLink("CRM Solutions", "CRMSolutions", "Services")
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                    
+                                            <li>
+                                                @Html.ActionLink("Products", "TourAndTravelManagement", "Products")
+                                            </li>
+
+                                           
+                                       
+
+                                        <li>                                         
+                                           @Html.ActionLink("Portfolio","MovingTrend","Portfolio")
+                                                                                                                                       
+                                        </li>
+
+                                        <li>
+                                           @Html.ActionLink("Blog","Blog","Blog")
+                                        </li>
+
+                                        <li>
+                                            @Html.ActionLink("Career","Career","Home")
+                                            
+                                        </li>
+
+                                        <li>
+                                        @Html.ActionLink("Contact","Contact","Home")
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </nav>
+                            <!-- Main Menu End-->
+                            <div class="btn-outer">
+                                <ul>
+                                    @*<li>
+                                        <a href="#" class="search-btn search-box-btn"><span class="icon fa fa-search"></span></a>
+                                    </li>*@
+                                    <li>
+                                    <li class="side-menu-main">
+                                        <div class="side-menu">
+                                            <div class="mobile-nav-button">
+                                                <div class="mobile-nav-button-line"></div>
+                                                <div class="mobile-nav-button-line"></div>
+                                                <div class="mobile-nav-button-line"></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-overlay"></div>
+            <div class="side-content" id="scrollbar">
+                <div class="side-content-info">
+                    <div class="menu-toggle-hamburger menu-close"><span class="flaticon-cancel"> </span></div>
+                    <div class="side-logo">
+                        <div class="text-center"><img class="img-responsive mb-30" src="~/images/resource/logo.png" alt=""></div>
+                        <p>Since 2015, Markhor Technologies has been delivering full cycle Software Development Services to customers. Markhor Technologies is an expert in development customization and integration of complex enterprise-level solutions, advanced web and mobile applications offering a well-balanced blend of technology skills, domain knowledge, hands-on experience, effective methodology and passion for IT.</p>
+                        <hr class="mar-bottom-30" />
+                    </div>
+                    <div class="contact-address">
+                        <div class="address-title mar-bottom-30">
+                            <h4 class="mb-15">Main Office</h4>
+                            @*<p>We take pride in our strong capability for designing and engineering robust software using mobile, web and cloud technologies.</p>*@
+                        </div>
+                        <div class="contact-box mar-bottom-20">
+
+                            <div class="contact-info">
+                                <div class="text-left">
+                                    <h6>43-L Abdul Haque Rd, Phase 2, Khokhar Chock, Johar Town,</h6>
+                                    <span>Lahore, Pakistan</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-box mar-bottom-20">
+
+                            <div class="contact-info">
+                                <div class="text-left">
+                                    <h6>+92 42 35235850</h6>
+                                    <span>Mon-Fri 9:00am-6:00pm</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-box mar-bottom-20">
+
+                            <div class="contact-info">
+                                <div class="text-left">
+                                    <h6>Info@markhortechnologies.com</h6>
+                                    <span>9:00am-6:00pm online support</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="social-icons theme-color mar-top-20 clearfix">
+                        <li><a href="https://web.facebook.com/MarkhorTech14/"><span class="fa fa-facebook-f"></span></a></li>
+                        <li><a href="https://twitter.com/MarkhorTech786"><span class="fa fa-twitter"></span></a></li>
+                        <li><a href="https://plus.google.com/u/0/110931126306720080549"><span class="fa fa-google-plus"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--Sticky Header-->
+            <div class="sticky-header">
+                <div class="auto-container clearfix">
+                    <!--Logo-->
+                    <div class="pull-left logo-outer">
+                         @*<div class="logo"><a><img src="~/images/resource/logo.png" alt="" title="Corpro" height="80" width="200"></a></div>*@
+                        <a href="@Url.Action("Index","Home")" class="img-responsive"><img src="~/images/resource/logo.png" alt="" title="Corpro" height="60" width="160"></a>
+                    </div>
+
+                    <!--Right Col-->
+                    <div class="right-col pull-right">
+                        <!-- Main Menu -->
+                        <nav class="main-menu">
+                            <div class="navbar-header">
+                                <!-- Toggle Button -->
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+
+                            <div class="navbar-collapse collapse clearfix">
+                                <ul class="navigation clearfix">
+                                    <li class="current">
+                                        @Html.ActionLink("Home","Index","Home")
+                  
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#">Company </a>
+                                        <ul>
+                                            <li>@Html.ActionLink("About Us", "About", "Home")</li>
+                                            <li>@Html.ActionLink("Board of Directors", "BoardOfDirectors", "Home")</li>
+                                            @*<li>@Html.ActionLink("Management Team", "ManagementTeam", "Home")</li>*@
+                                            @*<li>@Html.ActionLink("Testimonials", "Testimonial", "Home")</li>*@
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#">Services</a>
+                                        <ul>
+                                            <li>@Html.ActionLink("Custom Software Development", "CustomSoftwareDevelopment", "Services")</li>
+
+                                            <li>
+                                                @Html.ActionLink("Web Development", "WebDevelopment", "Services")
+                                            </li>
+                                            <li>
+                                                @Html.ActionLink("Mobile App Development", "MobileAppDevelopment", "Services")
+                                            </li>
+                                            <li>
+                                                @Html.ActionLink("Database Development", "DatabaseDevelopment", "Services")
+                                            </li>
+                                            <li>
+                                                @Html.ActionLink("ERP Solutions", "ERPSolutions", "Services")
+                                            </li>
+                                            <li>
+                                                @Html.ActionLink("POS Solutions", "POSSolutions", "Services")
+                                            </li>
+                                            <li>
+                                                @Html.ActionLink("CRM Solutions", "CRMSolutions", "Services")
+                                    </ul>
+                                    </li>
+
+                                    <li>
+                                        @Html.ActionLink("Products", "TourAndTravelManagement", "Products")
+                                    </li>
+
+                                    <li>
+                                        @Html.ActionLink("Portfolio", "MovingTrend", "Portfolio")
+                                    </li>
+
+                                    <li>
+                                        @Html.ActionLink("Blog", "Blog", "Blog")
+                                    </li>
+
+                                    <li>
+                                        @Html.ActionLink("Career","Career","Home")
+                                    </li>
+
+                                    <li>
+                                    @Html.ActionLink("Contact", "Contact", "Home")
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </nav><!-- Main Menu End-->
+                    </div>
+
+                </div>
+            </div>
+            <!--End Sticky Header-->
+        </header>
+
+        <!--End Main Header -->
+        <!--Main Slider-->
+
+
+
+        <!--End Main Slider-->
+
+
+
+
+        @RenderBody()
+
+
+
+
+
+
+        <!--Main Footer-->
+        <footer class="main-footer">
+
+            <div class="auto-container">
+                <div class="row clearfix">
+
+                    <!--Big Column-->
+                    <div class="big-column col-md-6 col-sm-12 col-xs-12">
+                        <div class="row clearfix">
+
+                            <!--Footer Column-->
+                            <div class="footer-column col-md-8 col-sm-6 col-xs-12">
+                                <div class="footer-widget logo-widget">
+                                    <div class="footer-logo"><a ><img src="~/images/resource/logo10.png" alt=""></a></div>
+                                    <div class="widget-content">
+                                        <div class="text">Markhor Technologies is a business software developer in Lahore, Pakistan. We provide software and solutions customized for your business. We help you automate and manage your entire business with one software product. </div>
+
+                                        <ul class="social-icons light clearfix">
+                                            <li><a href="https://www.facebook.com/MarkhorTech14"><span class="fa fa-facebook-f"></span></a></li>
+                                            <li><a href="https://twitter.com/MarkhorTech786"><span class="fa fa-twitter"></span></a></li>
+                                            <li><a href="https://plus.google.com/u/0/110931126306720080549"><span class="fa fa-google-plus"></span></a></li>
+                                           
+                                           
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Footer Column-->
+                            <div class="footer-column col-md-4 col-sm-6 col-xs-12">
+                                <div class="footer-widget links-widget">
+                                    <h2>QUICK LINKS</h2>
+                                    <div class="widget-content">
+                                        <ul class="list">
+
+
+
+                                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                                            <li>@Html.ActionLink("About Us", "About", "Home")</li>
+                                            <li>@Html.ActionLink("Services", "CustomSoftwareDevelopment", "Services")</li>
+                                            <li>@Html.ActionLink("Products", "TourAndTravelManagement", "Products")</li>
+                                            <li>@Html.ActionLink("Portfolio", "MovingTrend", "Portfolio")</li>
+                                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <!--Big Column-->
+                    <div class="big-column col-md-6 col-sm-12 col-xs-12">
+                        <div class="row clearfix">
+                            <!--Footer Column-->
+                            <div class="footer-column col-md-6 col-sm-6 col-xs-12">
+                                <h2>Latest News</h2>
+                                <!--Latest News-->
+                                <div class="posts-widget">
+                                    <div class="posts">
+                                        <div class="post">
+                                            <figure class="post-thumb"><img src="~/images/resource/sd11.jpeg" alt=""></figure>
+                                            <div class="desc-text"><a href="/Blog/Post/We're_living_in_the_golden_age_of_software_development">We're living in the golden age of Software...</a></div>
+                                            <div class="time">Sep 27, 2017</div>
+                                        </div>
+                                        <div class="post">
+                                            <figure class="post-thumb"><img src="~/images/resource/OpenSource.jpg" alt=""></figure>
+                                            <div class="desc-text"><a href="/Blog/Post/Open_source_continues_to_shape_our_world">Open source continues to shape our world...</a></div>
+                                            <div class="time">Oct 04, 2017</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Footer Column-->
+                            <div class="footer-column col-md-6 col-sm-6 col-xs-12">
+                                <h2>Instagram</h2>
+
+                                <div class="footer-widget gallery-widget">
+                                    <div class="row clearfix">
+                                        <figure class="image">@*<a href="~/images/resource/fg1.jpg" data-fancybox-group="instagram-gallery" class="lightbox-image" title="Caption Here">*@<img src="~/images/gallery/fg1.jpg" alt="">@*</a>*@</figure>
+                                        <figure class="image">@*<a href="images/resource/consult-form.jpg" data-fancybox-group="instagram-gallery" class="lightbox-image" title="Caption Here">*@<img src="~/images/gallery/fg2.jpg" alt="">@*</a>*@</figure>
+                                        <figure class="image">@*<a href="images/resource/consult-form.jpg" data-fancybox-group="instagram-gallery" class="lightbox-image" title="Caption Here">*@<img src="~/images/gallery/fg3.jpg" alt="">@*</a>*@</figure>
+                                        <figure class="image">@*<a href="images/resource/consult-form.jpg" data-fancybox-group="instagram-gallery" class="lightbox-image" title="Caption Here">*@<img src="~/images/gallery/fg4.png" alt="">@*</a>*@</figure>
+                                        <figure class="image">@*<a href="images/resource/consult-form.jpg" data-fancybox-group="instagram-gallery" class="lightbox-image" title="Caption Here">*@<img src="~/images/gallery/fg5.jpg" alt="">@*</a>*@</figure>
+                                        <figure class="image">@*<a href="images/resource/consult-form.jpg" data-fancybox-group="instagram-gallery" class="lightbox-image" title="Caption Here">*@<img src="~/images/gallery/footer-gallery-4.jpg" alt="">@*</a>*@</figure>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--Footer Bottom-->
+            <div class="footer-bottom">
+
+
+                <div class="copyright">Copyrights &copy; 2017, Markhor Technologies, All Rights Reserved.</div>
+            </div>
+
+
+        </footer>
+        <!--End Main Footer-->
+
+    </div>
+    <!--End pagewrapper-->
+    <!--Scroll to top-->
+    <div class="scroll-to-top scroll-to-target" data-target=".main-header"><span class="fa fa-long-arrow-up"></span></div>
+
+
+    <!--Search Popup-->
+    <div id="search-popup" class="search-popup">
+        <div class="close-search theme-btn"><span class="fa fa-close"></span></div>
+        <div class="popup-inner">
+
+            <div class="search-form">
+                <form method="post" action="http://html.tonatheme.com/2017/Corpro_template/index.html">
+                    <div class="form-group">
+                        <fieldset>
+                            <input type="search" class="form-control" name="search-input" value="" placeholder="Search Here" required>
+                            <input type="submit" value="Search" class="theme-btn">
+                        </fieldset>
+                    </div>
+                </form>
+
+                <br>
+                <h3>Recent Search Keywords</h3>
+                <ul class="recent-searches">
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">SEO</a></li>
+                    <li><a href="#">Logistics</a></li>
+                    <li><a href="#">Mobile Applications</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+    <!--End Search Popup-->
+
+    <script src="~/Scripts/jquery.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/revolution.min.js"></script>
+    <script src="~/Scripts/jquery.fancybox.pack.js"></script>
+    <script src="~/Scripts/jquery.fancybox-media.js"></script>
+    <script src="~/Scripts/owl.js"></script>
+    <script src="~/Scripts/wow.js"></script>
+    <script src="~/Scripts/parallax.js"></script>
+    <script src="~/Scripts/sidemenu.js"></script>
+    <script src="~/Scripts/isotope.js"></script>
+    <script src="~/Scripts/appear.js"></script>
+    <script src="~/Scripts/script.js"></script>
+
+<script type="text/javascript">
+    $("html, body").animate({ scrollTop: $('#scrollToSideBar').offset().top }, "slow");
+</script>
+
+</body>
+
+<!-- Mirrored from html.tonatheme.com/2017/Corpro_template/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Nov 2017 09:04:06 GMT -->
+</html>

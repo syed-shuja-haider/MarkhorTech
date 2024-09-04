@@ -1,0 +1,51 @@
+﻿@{
+    ViewBag.Title = "Blog";
+}
+
+
+@model IEnumerable<MarkhorTech.Web.Models.MarkhorPostViewModel>
+
+<!--Page Title-->
+<section class="page-title" style="background-image: url(/images/background/4.jpg);">
+    <div class="auto-container">
+        <h1>Blog</h1>
+        <ul class="bread-crumb">
+            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+            <li class="active">Blog</li>
+        </ul>
+    </div>
+</section>
+<!--End Page Title-->
+<!--Sidebar Page-->
+<div class="sidebar-page-container right-side-bar">
+    <div class="auto-container">
+        <div class="row">
+
+            @foreach (var item in Model)
+            {
+            <!--News Block-->
+            <div class="news-block col-md-4 col-sm-6 col-xs-12">
+                <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <figure class="image-box">
+                        <a href="@item.PostUrl"><img src="@item.ImageUrl"/></a>
+                        <a class="read-more" href="@item.PostUrl">Read More <span class="icon fa fa-long-arrow-right"></span></a>
+                    </figure>
+                    <div class="lower-content">
+                        <div class="upper-box">
+                            <h3><a href="@item.PostUrl">@item.PostTitle</a></h3>
+                            <div class="lower-box">
+                                <div class="date">@item.DateTime </div>
+                            </div>
+                            <div class="text">@item.ShortDescription </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            }
+
+
+
+
+        </div>
+    </div>
+</div>

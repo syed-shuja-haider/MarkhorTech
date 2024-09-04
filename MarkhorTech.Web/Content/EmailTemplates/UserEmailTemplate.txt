@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Markhor Technologies</title>
+  <link href="{0}Content/EmailTemplates/email.css" rel="stylesheet" />
+</head>
+<body class="body" style="padding:0; margin:0; display:block; background:#ffffff; -webkit-text-size-adjust:none" bgcolor="#ffffff">
+<table align="center" cellpadding="0" cellspacing="0" width="100%" height="100%">
+  <tr>
+    <td align="center" valign="top" bgcolor="#ffffff"  width="100%">
+
+    <table cellspacing="0" cellpadding="0" width="100%">
+      <tr>
+        <td style="border-bottom: 3px solid #EFBA01;" width="100%">
+          <center>
+            <table cellspacing="0" cellpadding="0" width="500" class="w320">
+              <tr>
+                <td valign="top" style="padding:10px 0; text-align:center;" class="mobile-center">
+                  <img width="250" height="62" src="{0}Content/EmailTemplates/Images/logo.png">
+                </td>
+              </tr>
+            </table>
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td background="{0}Content/EmailTemplates/Images/mar10.jpg" bgcolor="#64594b" valign="top" style="background: '{0}Content/EmailTemplates/Images/mar10.jpg' no-repeat center; background-color: #64594b; background-position: center; background-repeat: no-repeat; background-size: 1400px 600px;">
+
+          <div>
+            <center>
+              <table cellspacing="0" cellpadding="0" width="530" height="303" class="w320">
+                <tr>
+                  <td valign="middle" style="vertical-align:middle; padding-right: 15px; padding-left: 15px; text-align:left;" class="mobile-center" height="303">
+                    <h1>Thank you!</h1>
+                    <h2>for taking time to contact <br> Markhor Technologies (Pvt.) Ltd</h2>
+                  </td>
+                </tr>
+              </table>
+            </center>
+          </div>
+          <!--[if gte mso 9]>
+            </v:textbox>
+          </v:rect>
+          <![endif]-->
+        </td>
+      </tr>
+      <tr>
+        <td valign="top">
+
+          <center>
+            <table cellspacing="0" cellpadding="30" width="500" class="w290">
+              <tr>
+                <td valign="top" style="border-bottom:1px solid #a1a1a1;">
+
+                  <table cellspacing="0" cellpadding="0" width="100%">
+                    <tr>
+                      <td style="text-align: center;">
+                        <h3>A great big thank you!</h3>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table cellspacing="0" cellpadding="0" width="500" class="w320">
+              <tr>
+                <td>
+
+                  <table cellspacing="0" cellpadding="0" width="100%">
+                    <tr>
+                        <td class="mobile-padding" style="text-align:left;">
+                            <br />
+                            Dear {1},<br /><br />
+                            We have forwarded your query to our customers support team. They will get back to you as soon as possible. <br /> </b>
+                            <br />
+
+                            We <b>LOVE</b> our customer and the reviews they leave us. <br /> 
+                            <br />
+                            
+                            Thanks & Regrds, <br />
+                            Markhor Technologies (Pvt.) Ltd
+                            <br />
+                            <br />
+                        </td>
+                       
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td class="mobile-padding">
+           
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <table cellspacing="0" cellpadding="25" width="100%">
+                    <tr>
+                      <td>
+                        &nbsp;
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td style="background-color:#c2c2c2;">
+
+          <center>
+            <table cellspacing="0" cellpadding="0" width="500" class="w320">
+              <tr>
+                <td>
+                  <table cellspacing="0" cellpadding="30" width="100%">
+                    <tr>
+                      <td style="text-align:center;">
+                        <a href="https://twitter.com/MarkhorTech786">
+                          <img width="61" height="51" src="https://www.filepicker.io/api/file/vkoOlof0QX6YCDF9cCFV" alt="twitter" />
+                        </a>
+                        <a href="https://plus.google.com/u/0/110931126306720080549">
+                          <img width="61" height="51" src="https://www.filepicker.io/api/file/fZaNDx7cSPaE23OX2LbB" alt="google plus" />
+                        </a>
+                        <a href="https://web.facebook.com/MarkhorTech14/">
+                          <img width="61" height="51" src="https://www.filepicker.io/api/file/b3iHzECrTvCPEAcpRKPp" alt="facebook" />
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </center>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
